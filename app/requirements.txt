@@ -1,0 +1,6 @@
+snscrape
+transformers
+numpy<2
+torch==2.3.0+cpu
+elasticsearch
+schedule

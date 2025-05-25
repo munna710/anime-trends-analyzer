@@ -1,0 +1,17 @@
+{
+  "title": "Anime Trends",
+  "panels": [
+    {
+      "title": "Sentiment Distribution",
+      "type": "piechart",
+      "datasource": "Elasticsearch",
+      "targets": [{
+        "query": {
+          "index": "anime_tweets",
+          "metrics": [{ "type": "count", "id": "1" }],
+          "bucketAggs": [{ "type": "terms", "field": "sentiment.keyword" }]
+        }
+      }]
+    }
+  ]
+}
